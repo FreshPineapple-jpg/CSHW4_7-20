@@ -1,38 +1,294 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*new file*/
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    font-family: "Inter", sans-serif;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "dis dis dis dis dis dis"
+      "deg fac left_ right_ per ac"
+      "sin ln seven eight nine div"
+      "cos log four five six mul"
+      "tan_ sqrt one two three sub_"
+      "EXP pow zero_ period equal add_";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    background-color: white;
   }
-}
+  
+  #dis {
+    color: black;
+    background: white;
+    text-align: right;
+    grid-area: dis;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    justify-self: end;
+    align-self: end;
+  }
+  
+  
+  #deg {
+    color: black;
+    background: #dadce0;
+    grid-area: deg;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #fac {
+    color: black;
+    background: #dadce0;
+    grid-area: fac;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  } 
+  
+  #left_ {
+    color: black;
+    background: #dadce0;
+    grid-area: left_;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #right_ {
+    color: black;
+    background: #dadce0;
+    grid-area: right_;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #per {
+    color: black;
+    background: #dadce0;
+    grid-area: per;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #ac {
+    color: black;
+    background: #dadce0;
+    grid-area: ac;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #sin {
+    color: black;
+    background: #dadce0;
+    grid-area: sin;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #ln {
+    color: black;
+    background: #dadce0;
+    grid-area: ln;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #seven {
+    color: black;
+    background: #f1f3f4;
+    grid-area: seven;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #eight {
+    color: black;
+    background: #f1f3f4;
+    grid-area: eight;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #nine {
+    color: black;
+    background: #f1f3f4;
+    grid-area: nine;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #div {
+    color: black;
+    background: #dadce0;
+    grid-area: div;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #cos {
+    color: black;
+    background: #dadce0;
+    grid-area: cos;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #log {
+    color: black;
+    background: #dadce0;
+    grid-area: log;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #four {
+    color: black;
+    background: #f1f3f4;
+    grid-area: four;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #five {
+    color: black;
+    background: #f1f3f4;
+    grid-area: five;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #six {
+    color: black;
+    background: #f1f3f4;
+    grid-area: six;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #mul {
+    color: black;
+    background: #dadce0;
+    grid-area: mul;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #tan_ {
+    color: black;
+    background: #dadce0;
+    grid-area: tan_;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #sqrt {
+    color: black;
+    background: #dadce0;
+    grid-area: sqrt;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #one {
+    color: black;
+    background: #f1f3f4;
+    grid-area: one;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #two {
+    color: black;
+    background: #f1f3f4;
+    grid-area: two;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #three {
+    color: black;
+    background: #f1f3f4;
+    grid-area: three;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+
+  #sub_ {
+    color: black;
+    background: #dadce0;
+    grid-area: sub_;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #EXP {
+    color: black;
+    background: #dadce0;
+    grid-area: EXP;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #pow {
+    color: black;
+    background: #dadce0;
+    grid-area: pow;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #zero_ {
+    color: black;
+    background: #f1f3f4;
+    grid-area: zero_;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #period {
+    color: black;
+    background: #f1f3f4;
+    grid-area: period;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #equal {
+    color: black;
+    background: #dadce0;
+    grid-area: equal;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
+  #add_ {
+    color: black;
+    background: #dadce0;
+    grid-area: add_;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  
+  
+  a {
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+  }
